@@ -1,0 +1,85 @@
+.Who-Section {
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Who-Container {
+    height: 100vh;
+    scroll-snap-align: center;
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Who-Left {
+    flex: 1;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .Who-Left {
+      display: none;
+    }
+  }
+  
+  .Who-Title {
+    font-size: 74px;
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .Who-Title {
+      font-size: 60px;
+    }
+  }
+  
+  .Who-Right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .Who-Right {
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  .Who-WhatWeDo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .Who-Line {
+    height: 5px;
+  }
+  
+  .Who-Subtitle {
+    color: #da4ea2;
+  }
+  
+  .Who-Desc {
+    font-size: 20px;
+    color: lightgray;
+  }
+  
+  .Who-Button {
+    background-color: #da4ea2;
+    color: white;
+    font-weight: 500;
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
