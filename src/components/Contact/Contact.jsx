@@ -28,7 +28,7 @@ const Contact = () => {
       <div className="Contact-container">
         <div className="Contact-left">
           <form ref={ref} onSubmit={handleSubmit} className="Contact-form">
-            <h1 className="Contact-title">Contact Us</h1>
+            <h1 className="Contact-title">Contact Me</h1>
             <input placeholder="Name" name="name" className="Contact-input" />
             <input placeholder="Email" name="email" className="Contact-input" />
             <textarea

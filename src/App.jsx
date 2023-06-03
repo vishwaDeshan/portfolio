@@ -3,6 +3,7 @@ import Contact from "./components/Contact/Contact";
 import Hero from "./components/Hero/Hero";
 import Who from "./components/Who/Who";
 import './App.css'
+import Skills from "./components/Skills/Skills";
 
 const Container = styled.div`
   height: 100vh;
@@ -21,6 +22,7 @@ function App() {
     <Container className="gradient__bg">
       <Hero />
       <Who />
+      <Skills/>
       <Contact />
     </Container>
   );

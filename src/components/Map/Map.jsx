@@ -12,9 +12,9 @@ const Map = () => {
     <ComposableMap
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
-        rotate: [-10.0, -52.0, 0],
+        rotate: [-80.0, -20.0, 0],
         center: [-5, -3],
-        scale: 1600
+        scale: 750
       }}
       style={{width:"100%", height:"100%"}}
     >
@@ -32,34 +32,6 @@ const Map = () => {
           }
         </Geographies>
         <Annotation
-          subject={[2.3522, 48.8566]}
-          dx={-90}
-          dy={-30}
-          connectorProps={{
-            stroke: "white",
-            strokeWidth: 2,
-            strokeLinecap: "round"
-          }}
-        >
-          <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
-            {"Colombo"}
-          </text>
-        </Annotation>
-        <Annotation
-          subject={[21.01178, 52.22977]}
-          dx={-90}
-          dy={-30}
-          connectorProps={{
-            stroke: "white",
-            strokeWidth: 2,
-            strokeLinecap: "round"
-          }}
-        >
-          <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
-            {"Kandy"}
-          </text>
-        </Annotation>
-        <Annotation
           subject={[80.6350, 7.2906]} // latitude and longitude for Kandy, Sri Lanka
           dx={-90}
           dy={-30}
@@ -70,7 +42,7 @@ const Map = () => {
           }}
         >
           <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
-            {"Kandy"}
+            {"Kandy, Sri Lanka"}
           </text>
         </Annotation>
       </ZoomableGroup>
