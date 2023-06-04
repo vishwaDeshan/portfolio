@@ -24,7 +24,7 @@ const Hero = () => {
           <hr />
           <span><i>A passionate Information Technology major at the
             University of Moratuwa, Sri Lanka, with a focus on applying new
-            technologies to address real-world challenges...</i>
+            technologies to address real-world challenges..</i>
           </span>
           <p className="desc">
             <a href="https://www.linkedin.com/in/vishwa-waweliyadda-ab72b7246/" target="_blank" rel="noopener noreferrer"><FaLinkedin className="icon-large"/></a>
