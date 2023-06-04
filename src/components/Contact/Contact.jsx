@@ -9,19 +9,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm("service_id", "template_id", ref.current, "public_key")
-      .then(
-        (result) => {
-          console.log(result.text);
-          setSuccess(true);
-        },
-        (error) => {
-          console.log(error.text);
-          setSuccess(false);
-        }
-      );
   };
   return (
     <div className="Contact-section">
