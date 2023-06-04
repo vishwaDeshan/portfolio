@@ -45,25 +45,29 @@ const Skills = () => {
           <div class="row">
             <div class="column">
               <img src={react}/>
-              <span className="name">ReactJs</span>
+              <span className="name">ReactJS</span>
             </div>
             <div class="column">
               <img src={mongdb}/>
               <span className="name">MongoDB</span>
             </div>
             <div class="column">
-              <img src={redux}/>
-              <span className="name">Redux</span>
+              <img src={node}/>
+              <span className="name">NodeJS</span>
             </div>
           </div>
           <div class="row">
             <div class="column">
               <img src={express}/>
-              <span className="name">ExpressJs</span>
+              <span className="name">ExpressJS</span>
             </div>
             <div class="column">
               <img src={java}/>
               <span className="name">Java</span>
+            </div>
+            <div class="column">
+              <img src={redux}/>
+              <span className="name">Redux</span>
             </div>
           </div>
         </div>
