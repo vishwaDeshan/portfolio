@@ -45,3 +45,8 @@
     rgba(4, 12, 24, 1) 25%
   );
 }
+
+::-webkit-scrollbar {
+  width: 0.1px;
+  color:black;
+}

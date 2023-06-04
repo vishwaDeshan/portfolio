@@ -84,6 +84,7 @@
 
 .title {
   font-size: 65px;
+  white-space: nowrap;
   background: var(--gradient-text);
   background-clip: text;
   -webkit-background-clip: text;
