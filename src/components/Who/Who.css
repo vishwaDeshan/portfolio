@@ -25,6 +25,7 @@
   
   .Who-Title {
     font-size: 74px;
+    text-align:center;
     background: var(--gradient-text);
     background-clip: text;
     -webkit-background-clip: text;
@@ -69,6 +70,7 @@
   
   .Who-Desc {
     font-size: 20px;
+    text-align:center;
     color: lightgray;
   }
   
@@ -83,3 +85,19 @@
     cursor: pointer;
   }
   
+
+  .resume{
+    margin:25px auto;
+    text-align:center;
+    width:25%;
+    padding:10px 15px;
+    border-radius:10px;
+    background:transparent;
+    border:1px dotted #da4ea2;
+  }
+
+  
+  .resume a{ 
+    color: #fff;
+    text-decoration:none;
+  }

@@ -147,3 +147,8 @@
     transform: translateY(20px);
   }
 }
+
+.icon-large {
+  font-size: 32px;
+  cursor:pointer;
+}

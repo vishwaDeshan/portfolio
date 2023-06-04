@@ -2,8 +2,10 @@ import styled from "styled-components";
 import Contact from "./components/Contact/Contact";
 import Hero from "./components/Hero/Hero";
 import Who from "./components/Who/Who";
-import './App.css'
+import "./App.css";
 import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer/Footer";
 
 const Container = styled.div`
   height: 100vh;
@@ -22,8 +24,10 @@ function App() {
     <Container className="gradient__bg">
       <Hero />
       <Who />
-      <Skills/>
+      <Skills />
+      <Projects />
       <Contact />
+      <Footer />
     </Container>
   );
 }

@@ -4,7 +4,6 @@ import {
   Geographies,
   Geography,
   Annotation,
-  ZoomableGroup
 } from "react-simple-maps";
 
 const Map = () => {
@@ -18,7 +17,6 @@ const Map = () => {
       }}
       style={{width:"100%", height:"100%"}}
     >
-      <ZoomableGroup>
         <Geographies
           geography="/features.json"
           fill="#040C18"
@@ -45,7 +43,6 @@ const Map = () => {
             {"Kandy, Sri Lanka"}
           </text>
         </Annotation>
-      </ZoomableGroup>
     </ComposableMap>
   );
 };

@@ -19,7 +19,7 @@ const Who = () => {
           </Canvas>
         </div>
         <div className="Who-Right">
-          <h1 className="Who-Title">About</h1>
+          <h1 className="Who-Title">Who am I</h1>
           <div className="Who-WhatWeDo"></div>
           <p className="Who-Desc">
             <i>
@@ -34,6 +34,7 @@ const Who = () => {
               and excel..
             </i>
           </p>
+          <span className="resume"><a target="_blank" href="https://drive.google.com/file/d/1PHXQUdiWNDj98oZBpQ1eBKRYt1dfuvfv/view">View Resume</a></span>
         </div>
       </div>
     </div>

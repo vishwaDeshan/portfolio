@@ -4,6 +4,13 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import { SocialIcon } from "react-social-icons";
 import "./Hero.css";
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaGithub,
+  FaTwitter
+} from "react-icons/fa";
+
 
 const Hero = () => {
   return (
@@ -17,15 +24,15 @@ const Hero = () => {
             <sup>I'm </sup>Vishwa Waweliyadda{" "}
           </h1>
           <hr />
-          <span><i>I am a passionate Information Technology major at the
+          <span><i>A passionate Information Technology major at the
             University of Moratuwa, Sri Lanka, with a focus on applying new
             technologies to address real-world challenges...</i>
           </span>
           <p className="desc">
-            <SocialIcon url="https://www.linkedin.com/in/vishwa-waweliyadda-ab72b7246/" />
-            <SocialIcon url="https://github.com/vishwaDeshan" />
-            <SocialIcon url="https://twitter.com/VishwaDeshan98" />
-            <SocialIcon url="https://www.instagram.com/vishwa_desh_98/?fbclid=IwAR2GUCXnI4lTBh2TxcqUtYSTN0Vq-QYhoj9A1ugmnT0EycFDBQOp3ls2UHk" />
+            <a href="https://www.linkedin.com/in/vishwa-waweliyadda-ab72b7246/" target="_blank" rel="noopener noreferrer"><FaLinkedin className="icon-large"/></a>
+            <a href="https://github.com/vishwaDeshan" target="_blank" rel="noopener noreferrer"><FaGithub className="icon-large"/></a>
+            <a href="https://twitter.com/VishwaDeshan98" target="_blank" rel="noopener noreferrer"><FaTwitter className="icon-large"/></a>
+            <a href="https://www.instagram.com/vishwa_desh_98/?fbclid=IwAR2GUCXnI4lTBh2TxcqUtYSTN0Vq-QYhoj9A1ugmnT0EycFDBQOp3ls2UHk" target="_blank" rel="noopener noreferrer"><FaInstagram className="icon-large"/></a>
           </p>
         </div>
         <div className="right">
