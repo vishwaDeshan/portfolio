@@ -7,6 +7,10 @@
   justify-content: space-between;
 }
 
+.section .container span{
+  font-size:18px;
+}
+
 @media only screen and (max-width: 768px) {
   .section {
     height: 200vh;
@@ -19,18 +23,17 @@
   font-size: 40px;
 } 
 .section .subtitle {
-  color: navy;
   font-size: 35px !important;
   margin: -5px 0;
   background: linear-gradient(
     to right,
-    hsl(0, 0%, 30%) 0,
-    hsl(0, 0%, 100%) 10%,
-    hsl(0, 0%, 30%) 20%
+    hsl(195, 100%, 60%) 0,
+    hsl(195, 100%, 90%) 10%,
+    hsl(195, 100%, 60%) 20%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 5s infinite linear;
+  animation: shine 3s infinite linear;
 }
 
 @keyframes shine {
@@ -38,10 +41,10 @@
     background-position: 0;
   }
   60% {
-    background-position: 600px;
+    background-position: 400px;
   }
   100% {
-    background-position: 600px;
+    background-position: 400px;
   }
 }
 
@@ -124,7 +127,7 @@
   width: 400px;
   height: 400px;
   border-radius: 100%;
-  border: 1.5px dashed #da4ea2;
+  border: 1.6px dotted #da4ea2;
   object-fit: contain;
   position: absolute;
   top: 0;

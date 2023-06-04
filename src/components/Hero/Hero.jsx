@@ -1,8 +1,6 @@
 import React, { Suspense } from "react";
-import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
-import { SocialIcon } from "react-social-icons";
 import "./Hero.css";
 import {
   FaInstagram,
@@ -21,7 +19,7 @@ const Hero = () => {
             <i>&lt; Hello World /&gt;</i>
           </h2>
           <h1 className="title">
-            <sup>I'm </sup>Vishwa Waweliyadda{" "}
+            <sup>I'm </sup>Vishwa Waweliyadda
           </h1>
           <hr />
           <span><i>A passionate Information Technology major at the
@@ -43,7 +41,7 @@ const Hero = () => {
               <directionalLight position={[3, 2, 1]} />
               <Sphere args={[1, 1500, 1000]} scale={1.65}>
                 <MeshDistortMaterial
-                  color="#012348"
+                  color="#43008F"
                   attach="material"
                   distort={0.3}
                   speed={2}

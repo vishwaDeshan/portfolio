@@ -23,18 +23,22 @@ const Who = () => {
           <div className="Who-WhatWeDo"></div>
           <p className="Who-Desc">
             <i>
-              Hi, I'm Vishwa Waweliyadda, an IT undergrad at the University of
-              Moratuwa passionate about innovation. With strong critical
-              thinking, collaboration, and adaptability skills, I aim to
-              positively impact the tech industry. I enjoy analyzing complex
-              problems and working collaboratively to achieve great results. I
-              prioritize adaptability and continuously learn new skills to stay
-              current in the ever-evolving IT world. I'm excited about my
-              journey in IT and the opportunities it presents for me to innovate
-              and excel..
+              I'm <b>Vishwa Waweliyadda</b>, an undergrate at the University
+              of Moratuwa majoring in Information Technology, I am eager to
+              excel in the field of software engineering and contribute to the
+              development of innovative and impactful solutions. I am seeking an
+              opportunity to apply theoretical knowledge into practice and make
+              meaningful contributions to the industry.
             </i>
           </p>
-          <span className="resume"><a target="_blank" href="https://drive.google.com/file/d/1PHXQUdiWNDj98oZBpQ1eBKRYt1dfuvfv/view">View Resume</a></span>
+          <span className="resume">
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1PHXQUdiWNDj98oZBpQ1eBKRYt1dfuvfv/view"
+            >
+              View Resume
+            </a>
+          </span>
         </div>
       </div>
     </div>
