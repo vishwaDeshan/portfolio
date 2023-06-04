@@ -23,7 +23,7 @@ const Skills = () => {
               straightforward website or a sophisticated web application, I
               possess the necessary skills, expertise, and determination to turn
               your ideas into reality. The latest technologies I have been
-              proficient in....
+              proficient in...
             </i>{" "}
           </span>
         </div>
