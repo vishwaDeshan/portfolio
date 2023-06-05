@@ -9,15 +9,24 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    emailjs.sendForm('service_f0diwwe', 'template_m8jg99m', ref.current, 'mb9IGN-9fpdF608NA')
+      .then((result) => {
+        console.log(result.text);
+        setSuccess(true);
+      }, (error) => {
+        alert("error");
+        setSuccess(false);
+      });
   };
+
   return (
     <div className="Contact-section">
       <div className="Contact-container">
         <div className="Contact-left">
           <form ref={ref} onSubmit={handleSubmit} className="Contact-form">
             <h1 className="Contact-title">Get in touch</h1>
-            <input placeholder="Name" name="name" className="Contact-input" />
-            <input placeholder="Email" name="email" className="Contact-input" />
+            <input placeholder="Name" name="user_name" className="Contact-input" />
+            <input placeholder="Email" name="user_email" className="Contact-input" />
             <textarea
               placeholder="Write your message"
               name="message"
@@ -27,8 +36,11 @@ const Contact = () => {
             <button type="submit" className="Contact-button">
               Send
             </button>
-            {success &&
-              "Your message has been sent. We'll get back to you soon :)"}
+            {success && (
+              <p className="Contact-success-message">
+                Your message has been sent. We'll get back to you soon :)
+              </p>
+            )}
           </form>
         </div>
         <div className="Contact-right">
