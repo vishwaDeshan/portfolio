@@ -95,6 +95,7 @@
   }
   .project-containers{
     width:80%;
+    margin-left:18px !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
