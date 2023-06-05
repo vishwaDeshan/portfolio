@@ -14,6 +14,16 @@ const Container = styled.div`
   overflow-y: auto;
   scrollbar-width: none;
   color: white;
+
+
+  @media (max-width: 768px) {
+    height: 100%;
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+    scroll-padding-top: 1px;
+    justify-content:ceneter;
+  }
+
   &::-webkit-scrollbar {
     display: none;
   }

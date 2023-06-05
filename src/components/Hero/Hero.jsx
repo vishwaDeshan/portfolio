@@ -34,12 +34,12 @@ const Hero = () => {
           </p>
         </div>
         <div className="right">
-          <Canvas>
+          <Canvas className="sphere">
             <Suspense fallback={null}>
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={1} />
               <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 1500, 1000]} scale={1.65}>
+              <Sphere args={[1, 1500, 1000]} scale={1.65} >
                 <MeshDistortMaterial
                   color="#43008F"
                   attach="material"
