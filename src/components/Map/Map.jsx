@@ -5,6 +5,8 @@ import {
   Geography,
   Annotation,
 } from "react-simple-maps";
+import features from '../../maps/features.json'
+
 
 const Map = () => {
   return (
@@ -18,7 +20,7 @@ const Map = () => {
       style={{width:"100%", height:"100%"}}
     >
         <Geographies
-          geography="../maps/features.json"
+          geography={features}
           fill="#040C18"
           stroke="#FFFFFF"
           strokeWidth={0.5}
