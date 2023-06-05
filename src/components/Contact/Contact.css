@@ -90,4 +90,11 @@ textarea {
   .Contact-right {
     display: none;
   }
+  .Contact-title{
+    text-align:center;
+  }
+  .Contact-section{
+    margin-top:80px;
+    height: 92vh;
+  }
 }

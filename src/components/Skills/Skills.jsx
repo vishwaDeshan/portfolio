@@ -13,7 +13,7 @@ import mongdb from "../../../public/img/mongodb.png";
 const Skills = () => {
   return (
     <div className="section skill-section">
-      <div className="container">
+      <div className="container skill-container">
         <div className="left">
           <h1 className="Contact-title">Technologies I'm skilled at</h1>
           <span className="desc">

@@ -84,7 +84,7 @@ const Projects = () => {
                 </a>
               </span>
             </div>
-            <div className="project-description" style={{ fontSize: "20px" }}>
+            <div className="project-description div3-desc" style={{ fontSize: "20px" }}>
               This project is aimed at building a real-time sharing whiteboard.
               It is developed using the MERN stack along with Socket.IO, which enables real-time
               communication between multiple users. The whiteboard allows

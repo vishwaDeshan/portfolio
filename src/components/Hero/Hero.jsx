@@ -21,8 +21,8 @@ const Hero = () => {
           <h1 className="title">
             <sup>I'm </sup>Vishwa Waweliyadda
           </h1>
-          <hr />
-          <span><i>A passionate Information Technology major at the
+          <hr  class="hr-tag"/>
+          <span className="hero-desc"><i>A passionate Information Technology major at the
             University of Moratuwa, Sri Lanka, with a focus on applying new
             technologies to address real-world challenges..</i>
           </span>
