@@ -5,7 +5,7 @@ import {
   Geography,
   Annotation,
 } from "react-simple-maps";
-import features from '../../maps/features.json'
+import features from '../../../public/features.json'
 
 
 const Map = () => {
