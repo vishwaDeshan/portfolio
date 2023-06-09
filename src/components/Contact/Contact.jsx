@@ -1,47 +1,66 @@
 import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import Map from "../Map/Map";
 
 const Contact = () => {
-  const nameRef = useRef();
-  const emailRef = useRef();
-  const messageRef = useRef();
-  const [success, setSuccess] = useState(false);
-  const [validationErrors, setValidationErrors] = useState({});
+  const ref = useRef();
+  const [success, setSuccess] = useState(null);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [errors, setErrors] = useState({});
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Perform custom validations
+  const validateForm = () => {
     let isValid = true;
-    const errors = {};
+    const newErrors = {};
 
     // Validate name
-    if (nameRef.current.value.trim() === "") {
-      errors.name = "Please enter your name";
+    if (!name.trim()) {
+      newErrors.name = "Name is required";
       isValid = false;
     }
 
     // Validate email
-    const email = emailRef.current.value.trim();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (email === "" || !emailRegex.test(email)) {
-      errors.email = "Please enter a valid email address";
+    if (!email.trim()) {
+      newErrors.email = "Email is required";
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      newErrors.email = "Invalid email address";
       isValid = false;
     }
 
     // Validate message
-    if (messageRef.current.value.trim() === "") {
-      errors.message = "Please enter your message";
+    if (!message.trim()) {
+      newErrors.message = "Message is required";
       isValid = false;
     }
 
-    setValidationErrors(errors);
+    setErrors(newErrors);
+    return isValid;
+  };
 
-    if (isValid) {
-      // Handle form submission
-      console.log("Form submitted");
-      setSuccess(true);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      emailjs
+        .sendForm(
+          "service_f0diwwe",
+          "template_m8jg99m",
+          ref.current,
+          "mb9IGN-9fpdF608NA"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setSuccess(true);
+          },
+          (error) => {
+            alert("Error sending message. Please try again.");
+            setSuccess(false);
+          }
+        );
     }
   };
 
@@ -49,27 +68,47 @@ const Contact = () => {
     <div className="Contact-section">
       <div className="Contact-container">
         <div className="Contact-left">
-          <form onSubmit={handleSubmit} className="Contact-form">
+          <form ref={ref} onSubmit={handleSubmit} className="Contact-form">
             <h1 className="Contact-title">Get in touch</h1>
             <input
               placeholder="Name"
-              ref={nameRef}
-              className={validationErrors.name ? "Contact-input invalid" : "Contact-input"}
+              name="user_name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className={`Contact-input ${
+                errors.name && "Contact-input-error"
+              }`}
             />
-            {validationErrors.name && <p className="Contact-error">{validationErrors.name}</p>}
+            {errors.name && (
+              <span className="Contact-error-message">{errors.name}</span>
+            )}
+
             <input
               placeholder="Email"
-              ref={emailRef}
-              className={validationErrors.email ? "Contact-input invalid" : "Contact-input"}
+              name="user_email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className={`Contact-input ${
+                errors.email && "Contact-input-error"
+              }`}
             />
-            {validationErrors.email && <p className="Contact-error">{validationErrors.email}</p>}
+            {errors.email && (
+              <span className="Contact-error-message">{errors.email}</span>
+            )}
+
             <textarea
               placeholder="Write your message"
-              ref={messageRef}
+              name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               rows={10}
-              className={validationErrors.message ? "Contact-textarea invalid" : "Contact-textarea"}
+              className={`Contact-textarea ${
+                errors.message && "Contact-textarea-error"
+              }`}
             />
-            {validationErrors.message && <p className="Contact-error">{validationErrors.message}</p>}
+            {errors.message && (
+              <span className="Contact-error-message">{errors.message}</span>
+            )}
             <button type="submit" className="Contact-button">
               Send
             </button>

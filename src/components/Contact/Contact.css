@@ -87,9 +87,15 @@ textarea {
   background: rgba(90, 200, 250, 0.15);
 
 }
-.Contact-input.invalid,
-.Contact-textarea.invalid {
+.Contact-input-error,
+.Contact-textarea-error {
   border-color: red;
+}
+
+.Contact-error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
 }
 
 .Contact-right {
