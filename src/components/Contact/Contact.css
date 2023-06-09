@@ -87,7 +87,10 @@ textarea {
   background: rgba(90, 200, 250, 0.15);
 
 }
-
+.Contact-input.invalid,
+.Contact-textarea.invalid {
+  border-color: red;
+}
 
 .Contact-right {
   flex: 1;
