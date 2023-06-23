@@ -1,7 +1,7 @@
 import React from "react";
 import "./Skills.css";
 import react from "../../../public/img/react.png";
-import express from "../../../public/img/express.png";
+import sass from "../../../public/img/sass.png";
 import html_5 from "../../../public/img/html.png";
 import css_3 from "../../../public/img/css.png";
 import javaScript from "../../../public/img/javascript.png";
@@ -58,16 +58,16 @@ const Skills = () => {
           </div>
           <div class="row">
             <div class="column">
-              <img src={express}/>
-              <span className="name">ExpressJS</span>
-            </div>
-            <div class="column">
               <img src={java}/>
               <span className="name">Java</span>
             </div>
             <div class="column">
               <img src={redux}/>
               <span className="name">Redux</span>
+            </div>
+            <div class="column">
+              <img src={sass}/>
+              <span className="name">Sass</span>
             </div>
           </div>
         </div>
