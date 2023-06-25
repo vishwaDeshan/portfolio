@@ -34,7 +34,7 @@ const Who = () => {
           <span className="resume">
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1RoRk2onvuJbitbm2o5-sSl83_y7KWEXb/view"
+              href="https://drive.google.com/file/d/1kSB6gh__Kd1GyGFwOb_Q7prVYw8scLaN/view"
             >
               View Resume
             </a>
