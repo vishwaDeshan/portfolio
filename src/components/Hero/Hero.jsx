@@ -22,7 +22,7 @@ const Hero = () => {
             <sup>I'm </sup>Vishwa Waweliyadda
           </h1>
           <hr  class="hr-tag"/>
-          <span className="hero-desc"><i>A passionate Information Technology undergrate at the
+          <span className="hero-desc"><i>A passionate information technology undergraduate at the
             University of Moratuwa, Sri Lanka, with a focus on applying new
             technologies to address real-world challenges...</i>
           </span>
