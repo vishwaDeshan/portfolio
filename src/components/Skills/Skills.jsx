@@ -2,13 +2,15 @@ import React from "react";
 import "./Skills.css";
 import react from "../../../public/img/react.png";
 import sass from "../../../public/img/sass.png";
-import html_5 from "../../../public/img/html.png";
-import css_3 from "../../../public/img/css.png";
-import javaScript from "../../../public/img/javascript.png";
 import node from "../../../public/img/node.png";
 import redux from "../../../public/img/redux.png";
-import java from "../../../public/img/java.png";
 import mongdb from "../../../public/img/mongodb.png";
+import angular from "../../../public/img/angular.png";
+import ngrx from "../../../public/img/ngrx.png";
+import dotnet from "../../../public/img/dotnet.png";
+import blazor from "../../../public/img/blazor.png";
+import azure from "../../../public/img/azure.png";
+import mysql from "../../../public/img/mysql.png";
 
 const Skills = () => {
   return (
@@ -30,44 +32,44 @@ const Skills = () => {
         <div className="right">
           <div class="row">
             <div class="column">
-              <img src={html_5}/>
-              <span className="name">HTML</span>
+              <img src={angular} />
+              <span className="name">Angular</span>
             </div>
             <div class="column">
-              <img src={css_3}/>
-              <span className="name">CSS</span>
+              <img src={blazor} />
+              <span className="name">Blazor</span>
             </div>
             <div class="column">
-              <img src={javaScript}/>
-              <span className="name">JavaScript</span>
+              <img src={react} />
+              <span className="name">React</span>
             </div>
           </div>
           <div class="row">
             <div class="column">
-              <img src={react}/>
-              <span className="name">ReactJS</span>
+              <img src={ngrx} />
+              <span className="name">NGRX</span>
             </div>
             <div class="column">
-              <img src={mongdb}/>
-              <span className="name">MongoDB</span>
+              <img src={dotnet} />
+              <span className="name">ASP .NET</span>
             </div>
             <div class="column">
-              <img src={node}/>
+              <img src={node} />
               <span className="name">NodeJS</span>
             </div>
           </div>
           <div class="row">
             <div class="column">
-              <img src={java}/>
-              <span className="name">Java</span>
+              <img src={mongdb} />
+              <span className="name">MongoDB</span>
             </div>
             <div class="column">
-              <img src={redux}/>
-              <span className="name">Redux</span>
+              <img src={mysql} />
+              <span className="name">My SQL</span>
             </div>
             <div class="column">
-              <img src={sass}/>
-              <span className="name">Sass</span>
+              <img src={azure} />
+              <span className="name">Azure</span>
             </div>
           </div>
         </div>

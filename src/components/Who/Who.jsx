@@ -23,9 +23,9 @@ const Who = () => {
           <div className="Who-WhatWeDo"></div>
           <p className="Who-Desc">
             <i>
-              I'm <b>Vishwa Waweliyadda</b>, an undergrate at the University
-              of Moratuwa majoring in Information Technology, I am eager to
-              excel in the field of software engineering and contribute to the
+              I'm <b>Vishwa Waweliyadda</b>, an undergrate at the University of
+              Moratuwa majoring in Information Technology, I am eager to excel
+              in the field of software engineering and contribute to the
               development of innovative and impactful solutions. I am seeking an
               opportunity to apply theoretical knowledge into practice and make
               meaningful contributions to the industry.
@@ -34,7 +34,7 @@ const Who = () => {
           <span className="resume">
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1kSB6gh__Kd1GyGFwOb_Q7prVYw8scLaN/view"
+              href="https://drive.google.com/drive/folders/1sh72n1LpheUr57VOxUiaye_FAxMAuayn?usp=sharing"
             >
               View Resume
             </a>

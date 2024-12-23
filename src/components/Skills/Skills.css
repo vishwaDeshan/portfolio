@@ -21,7 +21,7 @@
 .column img {
   width: 75px;
   height: 75px;
-  object-fit: cover;
+  object-fit: align;
   margin-bottom: 10px;
 }
 
@@ -49,21 +49,21 @@
     justify-content: space-around;
     margin: 50px auto;
     width: 75%;
-    animation:none;
+    animation: none;
   }
 
   .column {
     width: 100px;
-    margin:20px auto;
+    margin: 20px auto;
   }
   .skill-section {
-    padding-top:-5px;
+    padding-top: -5px;
   }
-  .skill-section .desc{
-    display:none;
+  .skill-section .desc {
+    display: none;
   }
-  .skill-section .right{
-    margin-top:-10px;
+  .skill-section .right {
+    margin-top: -10px;
   }
   .container {
     display: flex;

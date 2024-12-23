@@ -82,10 +82,9 @@ textarea {
   padding: 20px;
 }
 
-.Contact-button:hover{
+.Contact-button:hover {
   color: white;
   background: rgba(90, 200, 250, 0.15);
-
 }
 .Contact-input-error,
 .Contact-textarea-error {
@@ -103,18 +102,17 @@ textarea {
 }
 
 @media only screen and (max-width: 768px) {
-  .Contact-section{
-
-    padding-top:100px;
+  .Contact-section {
+    padding-top: 100px;
   }
   .Contact-right {
     display: none;
   }
-  .Contact-title{
-    text-align:center;
+  .Contact-title {
+    text-align: center;
   }
-  .Contact-section{
-    margin-top:80px;
+  .Contact-section {
+    margin-top: 80px;
     height: 92vh;
   }
 }

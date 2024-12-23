@@ -91,45 +91,47 @@
 
 @media only screen and (max-width: 768px) {
   .project-section {
-    margin:100px auto;
-    width:100vw !important;
+    margin: 100px auto;
+    width: 100vw !important;
   }
-  .project-section h2{
-    margin:25px auto !important;
+  .project-section h2 {
+    margin: 25px auto !important;
   }
-  .project-containers{
-    width:100%;
+  .project-containers {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .project-section .top-row {
-    margin-top:-25px;
+    margin-top: -25px;
     display: flex;
     flex-direction: column;
   }
- .div1,.div2,.div3{
-    width:300px !important;
-    height:210px;
-    margin-top:10px;
-    margin:5px auto !important;
+  .div1,
+  .div2,
+  .div3 {
+    width: 300px !important;
+    height: 210px;
+    margin-top: 10px;
+    margin: 5px auto !important;
   }
 
-  .div3{
-    height:250px !important;
+  .div3 {
+    height: 250px !important;
   }
-  .div3-desc{
-    font-size:15px !important;
-  }
-
-  .project-description{
-    font-size:15px;
-  }
-  .tech{
-    display:none;
-  }
-  .bottom-row, .div3{
-    margin-top:3px !important;
+  .div3-desc {
+    font-size: 15px !important;
   }
 
+  .project-description {
+    font-size: 15px;
+  }
+  .tech {
+    display: none;
+  }
+  .bottom-row,
+  .div3 {
+    margin-top: 3px !important;
+  }
 }
