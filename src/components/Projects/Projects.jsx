@@ -58,10 +58,9 @@ const Projects = () => {
               </span>
             </div>
             <div className="project-description">
-              Hasthiya IT was the lead developer for our Level 2 project, an LMS
-              to assist people in Sri Lanka with competitive exam preparation.
-              The system includes web and mobile apps using the MERN stack and
-              Flutter. I worked as the project's group leader.
+              Hasthiya IT led the development of our Level 2 LMS project,
+              assisting Sri Lankans with competitive exam prep. The system
+              includes web and mobile apps using the MERN stack.
             </div>
             <div className="tech">
               <FaReact size={30} />
