@@ -19,14 +19,12 @@ const Skills = () => {
         <div className="left">
           <h1 className="Contact-title">Technologies I'm skilled at</h1>
           <span className="desc">
-            <i>
               I have been working with advanced tools and techniques in
               frontend, backend, and database development. Whether you require a
               straightforward website or a sophisticated web application, I
               possess the necessary skills, expertise, and determination to turn
               your ideas into reality. The latest technologies I have been
-              proficient in...
-            </i>{" "}
+              proficient in...{" "}
           </span>
         </div>
         <div className="right">

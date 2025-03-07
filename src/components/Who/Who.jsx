@@ -22,14 +22,12 @@ const Who = () => {
           <h1 className="Who-Title">Who am I</h1>
           <div className="Who-WhatWeDo"></div>
           <p className="Who-Desc">
-            <i>
-              I'm <b>Vishwa Waweliyadda</b>, an undergrate at the University of
-              Moratuwa majoring in Information Technology, I am eager to excel
-              in the field of software engineering and contribute to the
-              development of innovative and impactful solutions. I am seeking an
-              opportunity to apply theoretical knowledge into practice and make
-              meaningful contributions to the industry.
-            </i>
+            I'm <b>Vishwa Waweliyadda</b>, an undergrate at the University of
+            Moratuwa majoring in Information Technology, I am eager to excel in
+            the field of software engineering and contribute to the development
+            of innovative and impactful solutions. I am seeking an opportunity
+            to apply theoretical knowledge into practice and make meaningful
+            contributions to the industry.
           </p>
           <span className="resume">
             <a

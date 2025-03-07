@@ -16,13 +16,11 @@ const Projects = () => {
   return (
     <div className="project-section">
       <h2>Projects</h2>
-      <div class="project-containers">
+      <div class="project-containers" style={{ marginTop: "-3px" }}>
         <div class="top-row">
           <div class="div1">
             <div className="project-title">
-              <b>
-                <i>Zaptern - Intern Opportunity Management Portal</i>
-              </b>
+              <b>Zaptern - Intern Opportunity Management Portal</b>
               <span class="github-icon">
                 <a
                   href="https://github.com/vishwaDeshan/Zaptern-SOMP-Frontend"
@@ -48,9 +46,7 @@ const Projects = () => {
           </div>
           <div class="div2">
             <div className="project-title">
-              <b>
-                <i>EduMor </i> ~ Learning Management System{" "}
-              </b>
+              <b>EduMor ~ Learning Management System </b>
               <span class="github-icon">
                 <a
                   href="https://github.com/vishwaDeshan/EduMor-Learning-Management-System"
@@ -93,13 +89,9 @@ const Projects = () => {
               className="project-description div3-desc"
               style={{ fontSize: "20px" }}
             >
-              This project is aimed at building a real-time sharing whiteboard.
-              It is developed using the MERN stack along with Socket.IO, which
-              enables real-time communication between multiple users. The
-              whiteboard allows multiple users to collaborate on a shared
-              canvas, in real-time. Users can draw and add different types of
-              media to the canvas, which is then immediately visible to all
-              other participants.
+              This project is a real-time collaborative whiteboard built with
+              the MERN stack and Socket.IO. It enables multiple users to draw,
+              add media, and interact on a shared canvas with instant updates.
             </div>
             <div className="tech">
               <FaReact size={30} />
@@ -110,9 +102,7 @@ const Projects = () => {
           </div>
           <div class="div2">
             <div className="project-title">
-              <b>
-                <i>Safe Zone Maker</i>
-              </b>
+              <b>Safe Zone Maker</b>
               <span class="github-icon">
                 <a
                   href="https://github.com/vishwaDeshan/Safe-Zone-Maker"

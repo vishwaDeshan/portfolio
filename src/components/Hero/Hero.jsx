@@ -2,13 +2,7 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import "./Hero.css";
-import {
-  FaInstagram,
-  FaLinkedin,
-  FaGithub,
-  FaTwitter
-} from "react-icons/fa";
-
+import { FaInstagram, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -21,16 +15,41 @@ const Hero = () => {
           <h1 className="title">
             <sup>I'm </sup>Vishwa Waweliyadda
           </h1>
-          <hr  class="hr-tag"/>
-          <span className="hero-desc"><i>A passionate information technology undergraduate at the
-            University of Moratuwa, Sri Lanka, with a focus on applying new
-            technologies to address real-world challenges...</i>
+          <hr class="hr-tag" />
+          <span className="hero-desc">
+            A passionate information technology undergraduate at the University
+            of Moratuwa, Sri Lanka, with a focus on applying new technologies to
+            address real-world challenges...
           </span>
           <p className="desc">
-            <a href="https://www.linkedin.com/in/vishwa-waweliyadda/" target="_blank" rel="noopener noreferrer"><FaLinkedin className="icon-large"/></a>
-            <a href="https://github.com/vishwaDeshan" target="_blank" rel="noopener noreferrer"><FaGithub className="icon-large"/></a>
-            <a href="https://twitter.com/VishwaWawe" target="_blank" rel="noopener noreferrer"><FaTwitter className="icon-large"/></a>
-            <a href="https://www.instagram.com/vishwa_desh_98/?fbclid=IwAR2GUCXnI4lTBh2TxcqUtYSTN0Vq-QYhoj9A1ugmnT0EycFDBQOp3ls2UHk" target="_blank" rel="noopener noreferrer"><FaInstagram className="icon-large"/></a>
+            <a
+              href="https://www.linkedin.com/in/vishwa-waweliyadda/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="icon-large" />
+            </a>
+            <a
+              href="https://github.com/vishwaDeshan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="icon-large" />
+            </a>
+            <a
+              href="https://twitter.com/VishwaWawe"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="icon-large" />
+            </a>
+            <a
+              href="https://www.instagram.com/vishwa_desh_98/?fbclid=IwAR2GUCXnI4lTBh2TxcqUtYSTN0Vq-QYhoj9A1ugmnT0EycFDBQOp3ls2UHk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="icon-large" />
+            </a>
           </p>
         </div>
         <div className="right">
@@ -39,7 +58,7 @@ const Hero = () => {
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={1} />
               <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 1500, 1000]} scale={1.65} >
+              <Sphere args={[1, 1500, 1000]} scale={1.65}>
                 <MeshDistortMaterial
                   color="#43008F"
                   attach="material"
