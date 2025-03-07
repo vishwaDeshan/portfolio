@@ -8,7 +8,7 @@
 }
 
 .project-section h2 {
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 65px;
   background: var(--gradient-text);
   background-clip: text;
@@ -50,7 +50,7 @@
 .div2 {
   flex: 1;
   width: 150px;
-  height: 205px;
+  height: 195px;
   font-size: 20px !important;
 }
 
@@ -68,14 +68,14 @@
 }
 
 .project-description {
-  margin-top: 20px;
+  margin-top: 14px;
   font-size: 18px !important;
 }
 
 .tech {
-  margin-top: 25px;
+  margin-top: 18px;
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 .explore-more-button button{
   border: none;
