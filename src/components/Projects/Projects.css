@@ -76,6 +76,22 @@
   display: flex;
   gap: 10px;
 }
+.explore-more-button button{
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: 20px;
+  margin-top: -15px;
+  cursor: pointer;
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.explore-more-button button:hover {
+  background-color: rgba(90, 200, 250, 0.5);
+}
 
 @keyframes animate2 {
   0% {
