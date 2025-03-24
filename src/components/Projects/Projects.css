@@ -61,11 +61,11 @@
   justify-content: space-between;
 }
 
-.div1:hover,
+/* .div1:hover,
 .div2:hover,
 .div3:hover {
   animation: animate2 1.5s ease-in infinite backwards;
-}
+} */
 
 .project-description {
   margin-top: 14px;
@@ -94,7 +94,7 @@
   background-color: rgba(90, 200, 250, 0.5);
 }
 
-@keyframes animate2 {
+/* @keyframes animate2 {
   0% {
     transform: scale(1);
   }
@@ -104,7 +104,7 @@
   100% {
     transform: scale(1);
   }
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .project-section {
